@@ -1,0 +1,178 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --color-white: #ffffff;
+}
+
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--color-white);
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* hedder */
+/* logo */
+.logo {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+span {
+  color: var(--accent-color);
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav .contacts {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .contacts.mail {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav .contacts:hover,
+.auth-nav .contacts:focus {
+  color: var(--accent-color);
+}
+
+/* main */
+/* section Эффективные решения */
+.hero {
+  background-color: #2f303a;
+}
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+}
+
+/* кнопка */
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-white);
+  background: #2196f3;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+  color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* section Наши преимущества  */
+.subject {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.subtitle {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+.text-subject {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+.our-team {
+  background-color: #f5f4fa;
+}
+
+/* портфолио */
+/* кнопки фильтра */
+.filter button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+}
+.filter button:hover,
+.filter button:focus {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+.btn-current {
+  background: var(--accent-color);
+  color: var(--color-white);
+}
+
+/* галерея работ */
+.heading {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondary-text-color);
+}
+
+/* footer */
+.footer {
+  background: #2f303a;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address.link {
+  color: var(--color-white);
+}
+
+.address:hover,
+.address:focus {
+  color: var(--color-white);
+}
