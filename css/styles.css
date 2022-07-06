@@ -272,7 +272,7 @@ span {
 }
 
 /* галерея работ */
-.gallery-list {
+.gallery {
   display: flex;
   flex-wrap: wrap;
 
@@ -281,11 +281,11 @@ span {
 .gallery-card {
   margin-bottom: 30px;
 }
-.gallery-card a {
+.gallery-card .gallery-link {
   text-decoration: none;
 }
 
-.gallery-list .gallery-card {
+.gallery .gallery-card {
   margin-right: 30px;
 }
 
@@ -299,20 +299,19 @@ span {
 .gallery-border {
   border: 1px solid #eeeeee;
   border-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
-.heading {
-  padding-top: 20px;
-  padding-left: 24px;
+.gallery-heading {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
-.paragraph {
+.gallery-paragraph {
   margin-top: 4px;
-  padding-left: 24px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
@@ -329,10 +328,12 @@ span {
 }
 
 .address {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  display: block;
 }
 .footer-address {
   margin-top: 20px;
@@ -347,7 +348,6 @@ span {
   color: var(--color-white);
 }
 
-.address {
-  font-style: normal;
-  margin-bottom: 9px;
+.footer-address .footer-item + .footer-item {
+  margin-top: 9px;
 }
