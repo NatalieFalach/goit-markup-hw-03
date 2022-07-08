@@ -30,10 +30,12 @@ ul {
   padding: 0;
 }
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  width: 1200px;
+  min-width: 1200px;
 }
 .section {
   padding-top: 94px;
@@ -79,9 +81,10 @@ span {
 }
 
 .site-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -124,10 +127,14 @@ span {
 /* section Эффективные решения */
 .hero {
   padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--dark-grey-background);
   text-align: center;
 }
 .title {
+  margin: 0 auto;
+  max-width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -138,6 +145,8 @@ span {
 
 /* кнопка */
 .button {
+  margin-top: 30px;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -148,9 +157,6 @@ span {
   letter-spacing: 0.06em;
   border: 0;
   border-radius: 4px;
-
-  margin-top: 30px;
-  padding: 10px 32px;
 }
 .button:hover,
 .button:focus {
@@ -165,6 +171,21 @@ span {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+.visibility-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* section Наши преимущества  */
@@ -198,8 +219,8 @@ span {
   padding-top: 0;
 }
 .work-list {
-  margin-top: 50px;
   display: flex;
+  margin-top: 50px;
 }
 .work-list .work-list-img + .work-list-img {
   margin-left: 30px;
@@ -211,31 +232,34 @@ span {
   background-color: var(--light-grey-background);
 }
 .our-team-list {
-  margin-top: 50px;
   display: flex;
+  margin-top: 50px;
 }
 .our-team-list .item + .item {
   margin-left: 30px;
 }
-.our-team-list .item {
+
+.our-team-wrapper {
+  padding: 30px 10px;
+
   background-color: var(--color-white);
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 30px;
   text-align: center;
 }
 .text-subject {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.2;
   color: var(--secondary-text-color);
-  margin-top: 10px;
   text-align: center;
 }
 
@@ -297,11 +321,10 @@ span {
   margin-bottom: 0px;
 }
 .gallery-border {
+  padding: 20px 24px;
+
   border: 1px solid #eeeeee;
   border-top: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
 }
 
 .gallery-heading {
@@ -319,9 +342,10 @@ span {
 
 /* footer */
 .footer {
-  background: var(--dark-grey-background);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background: var(--dark-grey-background);
 }
 .footer-logo {
   color: var(--color-white);
